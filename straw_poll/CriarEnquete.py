@@ -2,6 +2,7 @@ from selenium.webdriver import Firefox
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support.ui import Select
+from pathlib import Path
 
 class CriarEnquete():
 
@@ -10,7 +11,7 @@ class CriarEnquete():
     cabecalho = str
 
     def __init__(self) -> None:
-        self.driver = Firefox() #Cria o self.driver que vai se comunicar com o firefox
+        self.driver = Firefox(executable_path=Path("Straw_Poll", "geckodriver.exe")) #Cria o self.driver que vai se comunicar com o firefox
         self.driver.get("https://www.strawpoll.me/") #Vai até o site descrito
         self.driver.maximize_window() #Maximiza a tela do navegador
 
@@ -34,7 +35,7 @@ class CriarEnquete():
         self.driver.find_element(By.ID, "create-button").click()
         # Salvar Link
         WebDriverWait(self.driver, 10).until(UrlHasChanged(link))
-        self.link = self.driver.current_url
+        self.link = str(self.driver.current_url)
         #Fecha o navegador
         self.driver.close()
     
