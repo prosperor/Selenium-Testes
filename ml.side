@@ -1,0 +1,1045 @@
+{
+  "id": "f30e7b85-6b85-4973-9b0b-fe0f741faf73",
+  "version": "2.0",
+  "name": "ml",
+  "url": "https://mangalivre.net",
+  "tests": [{
+    "id": "ea42e892-d5cd-4c64-9d4a-c39c5c96a905",
+    "name": "Login",
+    "commands": [{
+      "id": "66d9013f-a313-4a74-80f5-31f2ba5768de",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eb3fa278-54cc-4c2f-abcd-066ee944873b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x780",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "042ebf0e-a9df-44e6-8638-a33efaf5895f",
+      "comment": "Selecionar o botão de login",
+      "command": "click",
+      "target": "css=.hidden-xs:nth-child(2)",
+      "targets": [
+        ["css=.hidden-xs:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='topnav']/div[2]/div[3]/div[3]/span/span", "xpath:idRelative"],
+        ["xpath=//span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4fdaa778-a792-4b25-983b-0b0d49ad05c0",
+      "comment": "Selecionar botão de login com google",
+      "command": "click",
+      "target": "css=.login-navbar .google-icon",
+      "targets": [
+        ["css=.login-navbar .google-icon", "css:finder"],
+        ["xpath=//div[@id='topnav']/div[2]/div[4]/ul/li[3]/a/span", "xpath:idRelative"],
+        ["xpath=//li[3]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "77f73491-0cc5-48b7-afd5-14513877afbe",
+      "comment": "selecionar o email a ser usado (mudar o valor \"2\" para o email desejado)",
+      "command": "click",
+      "target": "css=.JDAKTe:nth-child(2) .w1I7fb",
+      "targets": [
+        ["css=.JDAKTe:nth-child(2) .w1I7fb", "css:finder"],
+        ["xpath=//div[@id='view_container']/div/div/div[2]/div/div/div/form/span/section/div/div/div/div/ul/li[2]/div/div/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//li[2]/div/div/div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a611b122-7cdf-456b-b5ff-c82b4a9880a0",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "id=topnav",
+      "targets": [
+        ["id=topnav", "id"],
+        ["css=#topnav", "css:finder"],
+        ["xpath=//div[@id='topnav']", "xpath:attributes"],
+        ["xpath=//body/div[5]", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "44038a17-6b1b-4833-a6d5-2a253d08a257",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "css=.login",
+      "targets": [
+        ["css=.login", "css:finder"],
+        ["xpath=//div[@id='topnav']/div[2]/div[3]/div[3]/span", "xpath:idRelative"],
+        ["xpath=//div[3]/span", "xpath:position"],
+        ["xpath=//span[contains(.,' Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1d8228bc-eab3-438d-9eef-cd2b06f4dd7c",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=trigger-menu",
+      "targets": [
+        ["id=trigger-menu", "id"],
+        ["css=#trigger-menu", "css:finder"],
+        ["xpath=//span[@id='trigger-menu']", "xpath:attributes"],
+        ["xpath=//div[@id='topnav']/div[2]/div[3]/div[3]/span", "xpath:idRelative"],
+        ["xpath=//div[3]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2bb22ed5-c2b9-4194-83af-fd002c67b733",
+      "comment": "Abrir menu de perfil",
+      "command": "click",
+      "target": "id=trigger-menu",
+      "targets": [
+        ["id=trigger-menu", "id"],
+        ["css=#trigger-menu", "css:finder"],
+        ["xpath=//span[@id='trigger-menu']", "xpath:attributes"],
+        ["xpath=//div[@id='topnav']/div[2]/div[3]/div[3]/span", "xpath:idRelative"],
+        ["xpath=//div[3]/span", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "bb754d1c-c3f6-45f5-8252-c08855520b64",
+    "name": "MarcaçaoDeLeitura",
+    "commands": [{
+      "id": "d9a013ca-ff30-4c84-a168-f8819a3b70ee",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "192af258-d9a6-423b-a76d-f74707a77301",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x780",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7722d176-abb0-4114-b404-73feeeb362c3",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(1) > a > h1",
+      "targets": [
+        ["css=li:nth-child(1) > a > h1", "css:finder"],
+        ["xpath=//div[@id='topnav']/div[2]/div[3]/ul/li/a/h1", "xpath:idRelative"],
+        ["xpath=//li/a/h1", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5774b4f6-c708-46e5-9866-23ef637d660b",
+      "comment": "",
+      "command": "click",
+      "target": "css=#menu-titulos > li:nth-child(2) span",
+      "targets": [
+        ["css=#menu-titulos > li:nth-child(2) span", "css:finder"],
+        ["xpath=//ul[@id='menu-titulos']/li[2]/a/span", "xpath:idRelative"],
+        ["xpath=//ul[5]/li[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Melhores Notas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bc9e7921-f0b9-47e2-822f-3ddb4382bf27",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(1) > .link-block h1",
+      "targets": [
+        ["css=li:nth-child(1) > .link-block h1", "css:finder"],
+        ["xpath=//div[@id='titulos-az']/div/div/div[2]/ul/li/a/div[2]/span/h1", "xpath:idRelative"],
+        ["xpath=//span/h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'The King of Fighters: A New Beginning')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e94a0a63-99f7-4cae-946a-018c27127b8a",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.cover:nth-child(1)",
+      "targets": [
+        ["css=.cover:nth-child(1)", "css:finder"],
+        ["xpath=//img[@alt='Ler online: The King of Fighters: A New Beginning Mangá (pt-BR)']", "xpath:img"],
+        ["xpath=//div[@id='series-data']/div/div[3]/img", "xpath:idRelative"],
+        ["xpath=//div[3]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b5a832e8-850d-4f39-abba-1e9b747f1cd3",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Atualizada a cada 2 dia(s)",
+      "targets": [
+        ["linkText=Atualizada a cada 2 dia(s)", "linkText"],
+        ["css=.frequency-toggle", "css:finder"],
+        ["xpath=//div[@id='series-data']/div[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[29]", "xpath:href"],
+        ["xpath=//div[5]/div[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Atualizada a cada 2 dia(s) ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ed189cdd-e611-4157-82f9-747c6d28702b",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,847)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "69bbe3f4-6638-4884-bb0c-815d68bd00da",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(50) .cap-text > .hidden-xs",
+      "targets": [
+        ["css=li:nth-child(50) .cap-text > .hidden-xs", "css:finder"],
+        ["xpath=//div[@id='chapter-list']/div[2]/ul[2]/li[50]/a/div[2]/div/span/i", "xpath:idRelative"],
+        ["xpath=//li[50]/a/div[2]/div/span/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4e65b636-f96b-42b4-9b50-ad57e627caf3",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8cbb240d-bc20-4d36-b84c-8ea0238b760c",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=picture > img",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "35c58473-7a8c-476b-9493-8c539bae5d84",
+      "comment": "",
+      "command": "click",
+      "target": "css=picture > img",
+      "targets": [
+        ["css=picture > img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://cdn.statically.io/img/images2.optimages.net/f=auto/firefox/MXY7unD3WPCTJxFLK4rsFA/m3477813/7024/145087/150599/00capa.jpg')]", "xpath:img"],
+        ["xpath=//div[@id='reader-wrapper']/div[3]/div[2]/div/picture/img", "xpath:idRelative"],
+        ["xpath=//picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "235105e5-a1f8-4fff-896a-d386f0e884ca",
+      "comment": "",
+      "command": "click",
+      "target": "css=picture > img",
+      "targets": [
+        ["css=picture > img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://cdn.statically.io/img/images2.optimages.net/f=auto/firefox/ZCi79enbaeBHSkaqwfHACA/m3477814/7024/145087/150599/01.png')]", "xpath:img"],
+        ["xpath=//div[@id='reader-wrapper']/div[3]/div[2]/div/picture/img", "xpath:idRelative"],
+        ["xpath=//picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "81260d53-5a65-4b9b-889f-01d64f95fbcb",
+      "comment": "",
+      "command": "click",
+      "target": "css=picture > img",
+      "targets": [
+        ["css=picture > img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://cdn.statically.io/img/images2.optimages.net/f=auto/firefox/UiSKySzVWLUyrPUH17woJg/m3477815/7024/145087/150599/02.png')]", "xpath:img"],
+        ["xpath=//div[@id='reader-wrapper']/div[3]/div[2]/div/picture/img", "xpath:idRelative"],
+        ["xpath=//picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "da131bcd-c189-4b4e-bdfc-98b94b8b70dd",
+      "comment": "",
+      "command": "click",
+      "target": "css=picture > img",
+      "targets": [
+        ["css=picture > img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://cdn.statically.io/img/images2.optimages.net/f=auto/firefox/eUlQ2l-l-asv3hV8ao3N5Q/m3477816/7024/145087/150599/03.png')]", "xpath:img"],
+        ["xpath=//div[@id='reader-wrapper']/div[3]/div[2]/div/picture/img", "xpath:idRelative"],
+        ["xpath=//picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "26b32bbc-81c1-4838-804b-551208a28f47",
+      "comment": "",
+      "command": "click",
+      "target": "css=picture > img",
+      "targets": [
+        ["css=picture > img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://cdn.statically.io/img/images2.optimages.net/f=auto/firefox/IHiuT_oiFueGwJuPXKhQtw/m3477817/7024/145087/150599/04.png')]", "xpath:img"],
+        ["xpath=//div[@id='reader-wrapper']/div[3]/div[2]/div/picture/img", "xpath:idRelative"],
+        ["xpath=//picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "88405047-7351-453d-9a34-c45ca0bd2953",
+      "comment": "",
+      "command": "click",
+      "target": "css=picture > img",
+      "targets": [
+        ["css=picture > img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://cdn.statically.io/img/images2.optimages.net/f=auto/firefox/OTIX-tL41jn6ktp9nBhi0g/m3477818/7024/145087/150599/05.png')]", "xpath:img"],
+        ["xpath=//div[@id='reader-wrapper']/div[3]/div[2]/div/picture/img", "xpath:idRelative"],
+        ["xpath=//picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4b282218-b627-46ca-9d60-04755dcbf60a",
+      "comment": "",
+      "command": "click",
+      "target": "css=picture > img",
+      "targets": [
+        ["css=picture > img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://cdn.statically.io/img/images2.optimages.net/f=auto/firefox/0hF-cXjv988wljA1__6NGg/m3477819/7024/145087/150599/06.png')]", "xpath:img"],
+        ["xpath=//div[@id='reader-wrapper']/div[3]/div[2]/div/picture/img", "xpath:idRelative"],
+        ["xpath=//picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e640ba0b-86eb-498f-9a96-aa498d2c7000",
+      "comment": "",
+      "command": "click",
+      "target": "css=picture > img",
+      "targets": [
+        ["css=picture > img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://cdn.statically.io/img/images2.optimages.net/f=auto/firefox/MLQF4by3W6qLFyaAp90evQ/m3477820/7024/145087/150599/07.png')]", "xpath:img"],
+        ["xpath=//div[@id='reader-wrapper']/div[3]/div[2]/div/picture/img", "xpath:idRelative"],
+        ["xpath=//picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ff05a956-e055-4611-aa37-d5a5ed6e03e6",
+      "comment": "",
+      "command": "click",
+      "target": "css=picture > img",
+      "targets": [
+        ["css=picture > img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://cdn.statically.io/img/images2.optimages.net/f=auto/firefox/EtL3zvJGjmG8ZsN-psQZxA/m3477821/7024/145087/150599/08.png')]", "xpath:img"],
+        ["xpath=//div[@id='reader-wrapper']/div[3]/div[2]/div/picture/img", "xpath:idRelative"],
+        ["xpath=//picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aeea9f85-f8d8-478b-930f-11f880fe200d",
+      "comment": "",
+      "command": "click",
+      "target": "css=picture > img",
+      "targets": [
+        ["css=picture > img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://cdn.statically.io/img/images2.optimages.net/f=auto/firefox/vJ_eShiCNV72OeAl1sQppQ/m3477822/7024/145087/150599/09.png')]", "xpath:img"],
+        ["xpath=//div[@id='reader-wrapper']/div[3]/div[2]/div/picture/img", "xpath:idRelative"],
+        ["xpath=//picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5ad2dbdc-39a9-42c1-99e8-f8c5f92facf4",
+      "comment": "",
+      "command": "click",
+      "target": "css=picture > img",
+      "targets": [
+        ["css=picture > img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://cdn.statically.io/img/images2.optimages.net/f=auto/firefox/XG64vMyJr_p53PcOxGRMjA/m3477823/7024/145087/150599/10.png')]", "xpath:img"],
+        ["xpath=//div[@id='reader-wrapper']/div[3]/div[2]/div/picture/img", "xpath:idRelative"],
+        ["xpath=//picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0f8a951c-875d-4eba-8682-758ee1d5bb2b",
+      "comment": "",
+      "command": "click",
+      "target": "css=picture > img",
+      "targets": [
+        ["css=picture > img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://cdn.statically.io/img/images2.optimages.net/f=auto/firefox/CLOC8qtuGJp56LxWyORNhQ/m3477824/7024/145087/150599/11.png')]", "xpath:img"],
+        ["xpath=//div[@id='reader-wrapper']/div[3]/div[2]/div/picture/img", "xpath:idRelative"],
+        ["xpath=//picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "145ac760-7d61-4999-929d-5c25c0910c03",
+      "comment": "",
+      "command": "click",
+      "target": "css=picture > img",
+      "targets": [
+        ["css=picture > img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://cdn.statically.io/img/images2.optimages.net/f=auto/firefox/GmlM41zg4vtO4I0CciRkxg/m3477825/7024/145087/150599/12.png')]", "xpath:img"],
+        ["xpath=//div[@id='reader-wrapper']/div[3]/div[2]/div/picture/img", "xpath:idRelative"],
+        ["xpath=//picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "42e4f06d-40a5-4683-a4aa-192b8bb781ab",
+      "comment": "",
+      "command": "click",
+      "target": "css=picture > img",
+      "targets": [
+        ["css=picture > img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://cdn.statically.io/img/images2.optimages.net/f=auto/firefox/6_4cPkDPk18okIDaa3w5vA/m3477826/7024/145087/150599/13.png')]", "xpath:img"],
+        ["xpath=//div[@id='reader-wrapper']/div[3]/div[2]/div/picture/img", "xpath:idRelative"],
+        ["xpath=//picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "89f86fc7-6bf9-4433-86c0-b9d0c8f56972",
+      "comment": "",
+      "command": "click",
+      "target": "css=picture > img",
+      "targets": [
+        ["css=picture > img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://cdn.statically.io/img/images2.optimages.net/f=auto/firefox/9BOrRFpVPdrFH3AWQRjv9w/m3477827/7024/145087/150599/14.png')]", "xpath:img"],
+        ["xpath=//div[@id='reader-wrapper']/div[3]/div[2]/div/picture/img", "xpath:idRelative"],
+        ["xpath=//picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c15036ae-197d-485e-8f48-e70457564e15",
+      "comment": "",
+      "command": "click",
+      "target": "css=picture > img",
+      "targets": [
+        ["css=picture > img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://cdn.statically.io/img/images2.optimages.net/f=auto/firefox/3NvLTI83dL7GrvSkxdue_g/m3477828/7024/145087/150599/15.png')]", "xpath:img"],
+        ["xpath=//div[@id='reader-wrapper']/div[3]/div[2]/div/picture/img", "xpath:idRelative"],
+        ["xpath=//picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a89c2b51-1962-434b-af2f-96b5d1d9ab28",
+      "comment": "",
+      "command": "click",
+      "target": "css=picture > img",
+      "targets": [
+        ["css=picture > img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://cdn.statically.io/img/images2.optimages.net/f=auto/firefox/A8vHkZgjsL6J-89HO8pamQ/m3477829/7024/145087/150599/16.png')]", "xpath:img"],
+        ["xpath=//div[@id='reader-wrapper']/div[3]/div[2]/div/picture/img", "xpath:idRelative"],
+        ["xpath=//picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a8b59c48-71e2-44f3-99b4-373fbbf58348",
+      "comment": "",
+      "command": "click",
+      "target": "css=picture > img",
+      "targets": [
+        ["css=picture > img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://cdn.statically.io/img/images2.optimages.net/f=auto/firefox/BhaI9Ku88S5AULe7kttxdg/m3477830/7024/145087/150599/17.png')]", "xpath:img"],
+        ["xpath=//div[@id='reader-wrapper']/div[3]/div[2]/div/picture/img", "xpath:idRelative"],
+        ["xpath=//picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3cbb6b5b-2960-4ea0-9372-e6ecb61e2a47",
+      "comment": "",
+      "command": "click",
+      "target": "css=picture > img",
+      "targets": [
+        ["css=picture > img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://cdn.statically.io/img/images2.optimages.net/f=auto/firefox/07Hf8MvZL2rHKGXbHXpmyA/m3477831/7024/145087/150599/18.png')]", "xpath:img"],
+        ["xpath=//div[@id='reader-wrapper']/div[3]/div[2]/div/picture/img", "xpath:idRelative"],
+        ["xpath=//picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "216d31dc-098a-4a96-9b81-57a1729e2c1d",
+      "comment": "",
+      "command": "click",
+      "target": "css=picture > img",
+      "targets": [
+        ["css=picture > img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://cdn.statically.io/img/images2.optimages.net/f=auto/firefox/IuEmHIbKM7sZ6pgV3B6B6Q/m3477832/7024/145087/150599/19.png')]", "xpath:img"],
+        ["xpath=//div[@id='reader-wrapper']/div[3]/div[2]/div/picture/img", "xpath:idRelative"],
+        ["xpath=//picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d12ec57c-24c9-4966-9c2a-ce9faa9a4682",
+      "comment": "",
+      "command": "click",
+      "target": "css=picture > img",
+      "targets": [
+        ["css=picture > img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://cdn.statically.io/img/images2.optimages.net/f=auto/firefox/PA7tjVUOboT7eo8Icbpccw/m3477833/7024/145087/150599/20.png')]", "xpath:img"],
+        ["xpath=//div[@id='reader-wrapper']/div[3]/div[2]/div/picture/img", "xpath:idRelative"],
+        ["xpath=//picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "22e3d84c-738e-4321-9522-874d9d4dad95",
+      "comment": "",
+      "command": "click",
+      "target": "css=picture > img",
+      "targets": [
+        ["css=picture > img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://cdn.statically.io/img/images2.optimages.net/f=auto/firefox/JzTre38374_AFSmjTw4-IQ/m3477834/7024/145087/150599/21.png')]", "xpath:img"],
+        ["xpath=//div[@id='reader-wrapper']/div[3]/div[2]/div/picture/img", "xpath:idRelative"],
+        ["xpath=//picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6c202300-0eb0-4049-b45d-cd5e5dfb8035",
+      "comment": "",
+      "command": "click",
+      "target": "css=picture > img",
+      "targets": [
+        ["css=picture > img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://cdn.statically.io/img/images2.optimages.net/f=auto/firefox/_XwF3wss_gYwx_ur5oLHnQ/m3477835/7024/145087/150599/creditosimprovisado.jpg')]", "xpath:img"],
+        ["xpath=//div[@id='reader-wrapper']/div[3]/div[2]/div/picture/img", "xpath:idRelative"],
+        ["xpath=//picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "18da3284-f4b3-4643-80d3-5a65e2ef093b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.chapter-next:nth-child(3)",
+      "targets": [
+        ["css=.chapter-next:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='reader-wrapper']/div[2]/div[3]/div[3]", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]/div[3]/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "110dbf1c-176d-4760-bca2-aa4ecd759ddf",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=picture > img",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "d5dccf69-a866-4888-a09a-403bb0c5dc03",
+      "comment": "",
+      "command": "click",
+      "target": "css=picture > img",
+      "targets": [
+        ["css=picture > img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://cdn.statically.io/img/images2.optimages.net/f=auto/firefox/IPvuS_LXnpSNoMdFwZnV9g/m3504225/7024/146277/151806/01.png')]", "xpath:img"],
+        ["xpath=//div[@id='reader-wrapper']/div[3]/div[2]/div/picture/img", "xpath:idRelative"],
+        ["xpath=//picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7e510503-205e-426f-be15-f44311d7327d",
+      "comment": "",
+      "command": "click",
+      "target": "css=picture > img",
+      "targets": [
+        ["css=picture > img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://cdn.statically.io/img/images2.optimages.net/f=auto/firefox/wwWjUXO5n098qQAuaX4tYA/m3504226/7024/146277/151806/02.png')]", "xpath:img"],
+        ["xpath=//div[@id='reader-wrapper']/div[3]/div[2]/div/picture/img", "xpath:idRelative"],
+        ["xpath=//picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dd1ea46c-63ff-452c-948e-5cf96ada1c73",
+      "comment": "",
+      "command": "click",
+      "target": "css=picture > img",
+      "targets": [
+        ["css=picture > img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://cdn.statically.io/img/images2.optimages.net/f=auto/firefox/ZzxO8Xlct8ECKyJXfja9qQ/m3504227/7024/146277/151806/03.png')]", "xpath:img"],
+        ["xpath=//div[@id='reader-wrapper']/div[3]/div[2]/div/picture/img", "xpath:idRelative"],
+        ["xpath=//picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b2a2e45a-2d2e-4d31-83ac-764a48119bb9",
+      "comment": "",
+      "command": "click",
+      "target": "css=picture > img",
+      "targets": [
+        ["css=picture > img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://cdn.statically.io/img/images2.optimages.net/f=auto/firefox/hihP3HXENIC1rKeKcMfjqQ/m3504228/7024/146277/151806/04.png')]", "xpath:img"],
+        ["xpath=//div[@id='reader-wrapper']/div[3]/div[2]/div/picture/img", "xpath:idRelative"],
+        ["xpath=//picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "58af08f3-f583-4494-91f7-e82e187cb730",
+      "comment": "",
+      "command": "click",
+      "target": "css=picture > img",
+      "targets": [
+        ["css=picture > img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://cdn.statically.io/img/images2.optimages.net/f=auto/firefox/z-TMXoQevaRTOnbjfbffcA/m3504229/7024/146277/151806/05.png')]", "xpath:img"],
+        ["xpath=//div[@id='reader-wrapper']/div[3]/div[2]/div/picture/img", "xpath:idRelative"],
+        ["xpath=//picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e0c3b19b-ce67-46dc-8689-0998f945de05",
+      "comment": "",
+      "command": "click",
+      "target": "css=.manga-page",
+      "targets": [
+        ["css=.manga-page", "css:finder"],
+        ["xpath=//div[@id='reader-wrapper']/div[3]/div[2]", "xpath:idRelative"],
+        ["xpath=//div[5]/div[3]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "64e47d14-107d-4619-a51f-301eec573ab8",
+      "comment": "",
+      "command": "click",
+      "target": "css=picture > img",
+      "targets": [
+        ["css=picture > img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://cdn.statically.io/img/images2.optimages.net/f=auto/firefox/whEQeieTMCJjLRHCQHkJ2A/m3504230/7024/146277/151806/06.png')]", "xpath:img"],
+        ["xpath=//div[@id='reader-wrapper']/div[3]/div[2]/div/picture/img", "xpath:idRelative"],
+        ["xpath=//picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c682d9bc-0855-4a13-b191-663b499ddbcc",
+      "comment": "",
+      "command": "click",
+      "target": "css=picture > img",
+      "targets": [
+        ["css=picture > img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://cdn.statically.io/img/images2.optimages.net/f=auto/firefox/m917LEszsDZTUuiiDjmULA/m3504231/7024/146277/151806/07.png')]", "xpath:img"],
+        ["xpath=//div[@id='reader-wrapper']/div[3]/div[2]/div/picture/img", "xpath:idRelative"],
+        ["xpath=//picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2f21dbd5-079e-4bb0-8540-3c4e1c57019c",
+      "comment": "",
+      "command": "click",
+      "target": "css=picture > img",
+      "targets": [
+        ["css=picture > img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://cdn.statically.io/img/images2.optimages.net/f=auto/firefox/eizgIjfP6Dej_gFTpzA-8A/m3504232/7024/146277/151806/08.png')]", "xpath:img"],
+        ["xpath=//div[@id='reader-wrapper']/div[3]/div[2]/div/picture/img", "xpath:idRelative"],
+        ["xpath=//picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dc5316cb-a787-4188-8e28-9232fe8d67f9",
+      "comment": "",
+      "command": "click",
+      "target": "css=picture > img",
+      "targets": [
+        ["css=picture > img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://cdn.statically.io/img/images2.optimages.net/f=auto/firefox/ePfIhRErSJtq7hFCBD2AXQ/m3504233/7024/146277/151806/09.png')]", "xpath:img"],
+        ["xpath=//div[@id='reader-wrapper']/div[3]/div[2]/div/picture/img", "xpath:idRelative"],
+        ["xpath=//picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e0f99d42-d402-4cb8-b53a-5ede1d22cc2b",
+      "comment": "",
+      "command": "click",
+      "target": "css=picture > img",
+      "targets": [
+        ["css=picture > img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://cdn.statically.io/img/images2.optimages.net/f=auto/firefox/QAugE_K0pOydYXTFo6fayg/m3504234/7024/146277/151806/10.png')]", "xpath:img"],
+        ["xpath=//div[@id='reader-wrapper']/div[3]/div[2]/div/picture/img", "xpath:idRelative"],
+        ["xpath=//picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "512fd623-fa77-4d6e-b18d-7f3340955980",
+      "comment": "",
+      "command": "click",
+      "target": "css=picture > img",
+      "targets": [
+        ["css=picture > img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://cdn.statically.io/img/images2.optimages.net/f=auto/firefox/AO9nnPBvli8ZnI_1JSYqDA/m3504235/7024/146277/151806/11.png')]", "xpath:img"],
+        ["xpath=//div[@id='reader-wrapper']/div[3]/div[2]/div/picture/img", "xpath:idRelative"],
+        ["xpath=//picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e0a59e95-708f-4d6d-985d-1010626b7d6b",
+      "comment": "",
+      "command": "click",
+      "target": "css=picture > img",
+      "targets": [
+        ["css=picture > img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://cdn.statically.io/img/images2.optimages.net/f=auto/firefox/qKNaXc1trPoNZaIpJ-M6cQ/m3504236/7024/146277/151806/12.png')]", "xpath:img"],
+        ["xpath=//div[@id='reader-wrapper']/div[3]/div[2]/div/picture/img", "xpath:idRelative"],
+        ["xpath=//picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9186e70f-bf31-4815-87a1-e0db9fd22566",
+      "comment": "",
+      "command": "click",
+      "target": "css=picture > img",
+      "targets": [
+        ["css=picture > img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://cdn.statically.io/img/images2.optimages.net/f=auto/firefox/XMiMnWe4ILJm2JjIf-X6FQ/m3504237/7024/146277/151806/13.png')]", "xpath:img"],
+        ["xpath=//div[@id='reader-wrapper']/div[3]/div[2]/div/picture/img", "xpath:idRelative"],
+        ["xpath=//picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "420136c0-db05-4d26-a0f4-351f9b50ff4f",
+      "comment": "",
+      "command": "click",
+      "target": "css=picture > img",
+      "targets": [
+        ["css=picture > img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://cdn.statically.io/img/images2.optimages.net/f=auto/firefox/4LFcj3xWmP1YTdH0SGMvCQ/m3504238/7024/146277/151806/14.png')]", "xpath:img"],
+        ["xpath=//div[@id='reader-wrapper']/div[3]/div[2]/div/picture/img", "xpath:idRelative"],
+        ["xpath=//picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "64b93db6-4ef5-4883-b6c9-f30795d443cf",
+      "comment": "",
+      "command": "click",
+      "target": "css=picture > img",
+      "targets": [
+        ["css=picture > img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://cdn.statically.io/img/images2.optimages.net/f=auto/firefox/E5uYVGf48TFz_E2gtA95Iw/m3504239/7024/146277/151806/15.png')]", "xpath:img"],
+        ["xpath=//div[@id='reader-wrapper']/div[3]/div[2]/div/picture/img", "xpath:idRelative"],
+        ["xpath=//picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "19e41781-55b9-4f34-84bd-a6e49e43dbfe",
+      "comment": "",
+      "command": "click",
+      "target": "css=picture > img",
+      "targets": [
+        ["css=picture > img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://cdn.statically.io/img/images2.optimages.net/f=auto/firefox/pH6qOibALJL1ahtbwcLNHQ/m3504240/7024/146277/151806/16.jpg')]", "xpath:img"],
+        ["xpath=//div[@id='reader-wrapper']/div[3]/div[2]/div/picture/img", "xpath:idRelative"],
+        ["xpath=//picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c4faa1f5-7819-4190-ad71-ad5f3382a23a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.chapter-next:nth-child(3)",
+      "targets": [
+        ["css=.chapter-next:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='reader-wrapper']/div[2]/div[3]/div[3]", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]/div[3]/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bc06edd1-88aa-499d-948d-4c279a9091c6",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=picture > img",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "90d5fde4-ac8f-488a-86d5-f5735ddfd9ce",
+      "comment": "",
+      "command": "click",
+      "target": "css=picture > img",
+      "targets": [
+        ["css=picture > img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://cdn.statically.io/img/images2.optimages.net/f=auto/firefox/eolwBd7cdgI0V6vXWAH1zw/m3504255/7024/146279/151808/01.png')]", "xpath:img"],
+        ["xpath=//div[@id='reader-wrapper']/div[3]/div[2]/div/picture/img", "xpath:idRelative"],
+        ["xpath=//picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8a8bc63f-f850-46a1-87e5-40f66e6458bc",
+      "comment": "",
+      "command": "click",
+      "target": "css=picture > img",
+      "targets": [
+        ["css=picture > img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://cdn.statically.io/img/images2.optimages.net/f=auto/firefox/LfmUHZf3bFUjKMKqGi0hUg/m3504256/7024/146279/151808/02.png')]", "xpath:img"],
+        ["xpath=//div[@id='reader-wrapper']/div[3]/div[2]/div/picture/img", "xpath:idRelative"],
+        ["xpath=//picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0a037b31-5ea6-4c11-be03-6e83baa989ca",
+      "comment": "",
+      "command": "click",
+      "target": "css=picture > img",
+      "targets": [
+        ["css=picture > img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://cdn.statically.io/img/images2.optimages.net/f=auto/firefox/nzhqRpcoLM8wYWZrDsymfg/m3504257/7024/146279/151808/03.png')]", "xpath:img"],
+        ["xpath=//div[@id='reader-wrapper']/div[3]/div[2]/div/picture/img", "xpath:idRelative"],
+        ["xpath=//picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "34b9364c-3130-4fd3-944d-afeeb38e756b",
+      "comment": "",
+      "command": "click",
+      "target": "css=picture > img",
+      "targets": [
+        ["css=picture > img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://cdn.statically.io/img/images2.optimages.net/f=auto/firefox/v1Z_aYo1BoKkTO5bbK7P6g/m3504258/7024/146279/151808/04.png')]", "xpath:img"],
+        ["xpath=//div[@id='reader-wrapper']/div[3]/div[2]/div/picture/img", "xpath:idRelative"],
+        ["xpath=//picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "84b03b1f-6a37-480a-8da9-35a2be3e416a",
+      "comment": "",
+      "command": "click",
+      "target": "css=picture > img",
+      "targets": [
+        ["css=picture > img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://cdn.statically.io/img/images2.optimages.net/f=auto/firefox/f9UW1Jql6aVLr_GqONeFiQ/m3504259/7024/146279/151808/05.png')]", "xpath:img"],
+        ["xpath=//div[@id='reader-wrapper']/div[3]/div[2]/div/picture/img", "xpath:idRelative"],
+        ["xpath=//picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ccb6b4e8-816e-4f9a-a88d-c90eaf4ff481",
+      "comment": "",
+      "command": "click",
+      "target": "css=picture > img",
+      "targets": [
+        ["css=picture > img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://cdn.statically.io/img/images2.optimages.net/f=auto/firefox/8VwuTvSgpzY9DaA3-3WhNA/m3504260/7024/146279/151808/06.png')]", "xpath:img"],
+        ["xpath=//div[@id='reader-wrapper']/div[3]/div[2]/div/picture/img", "xpath:idRelative"],
+        ["xpath=//picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f50e213d-39eb-4a91-b6c2-63a2aed3be91",
+      "comment": "",
+      "command": "click",
+      "target": "css=picture > img",
+      "targets": [
+        ["css=picture > img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://cdn.statically.io/img/images2.optimages.net/f=auto/firefox/nqRh6gOWj337Y3VPWKH4hA/m3504261/7024/146279/151808/07.png')]", "xpath:img"],
+        ["xpath=//div[@id='reader-wrapper']/div[3]/div[2]/div/picture/img", "xpath:idRelative"],
+        ["xpath=//picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bbe71346-4ae1-4d16-bded-bd32409809b1",
+      "comment": "",
+      "command": "click",
+      "target": "css=picture > img",
+      "targets": [
+        ["css=picture > img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://cdn.statically.io/img/images2.optimages.net/f=auto/firefox/LxYOcY9NWTobBaAsqEi6pQ/m3504262/7024/146279/151808/08.png')]", "xpath:img"],
+        ["xpath=//div[@id='reader-wrapper']/div[3]/div[2]/div/picture/img", "xpath:idRelative"],
+        ["xpath=//picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0d96a102-b995-4fa3-b28a-76d8f4fecbc6",
+      "comment": "",
+      "command": "click",
+      "target": "css=picture > img",
+      "targets": [
+        ["css=picture > img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://cdn.statically.io/img/images2.optimages.net/f=auto/firefox/iUJhLhXSkom12K7FctH2uw/m3504263/7024/146279/151808/09.png')]", "xpath:img"],
+        ["xpath=//div[@id='reader-wrapper']/div[3]/div[2]/div/picture/img", "xpath:idRelative"],
+        ["xpath=//picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c0fce9bf-9ef0-4c7d-9fc2-24f71b72391f",
+      "comment": "",
+      "command": "click",
+      "target": "css=picture > img",
+      "targets": [
+        ["css=picture > img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://cdn.statically.io/img/images2.optimages.net/f=auto/firefox/hMJhYy4Vc2GA3BxQEefF6w/m3504264/7024/146279/151808/10.png')]", "xpath:img"],
+        ["xpath=//div[@id='reader-wrapper']/div[3]/div[2]/div/picture/img", "xpath:idRelative"],
+        ["xpath=//picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "85ceee13-21d9-4a7d-9d04-1aef8aa6aa24",
+      "comment": "",
+      "command": "click",
+      "target": "css=picture > img",
+      "targets": [
+        ["css=picture > img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://cdn.statically.io/img/images2.optimages.net/f=auto/firefox/i8xE9uGojfmJUDnGc2kbtQ/m3504265/7024/146279/151808/11.png')]", "xpath:img"],
+        ["xpath=//div[@id='reader-wrapper']/div[3]/div[2]/div/picture/img", "xpath:idRelative"],
+        ["xpath=//picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "27c674a0-d649-4a2c-9c09-0aaf18c099f1",
+      "comment": "",
+      "command": "click",
+      "target": "css=picture > img",
+      "targets": [
+        ["css=picture > img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://cdn.statically.io/img/images2.optimages.net/f=auto/firefox/g7JXUeM_LNl7abJDd0onYA/m3504266/7024/146279/151808/12.png')]", "xpath:img"],
+        ["xpath=//div[@id='reader-wrapper']/div[3]/div[2]/div/picture/img", "xpath:idRelative"],
+        ["xpath=//picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9dc7298e-5398-4b73-96a3-705b09d036f4",
+      "comment": "",
+      "command": "click",
+      "target": "css=picture > img",
+      "targets": [
+        ["css=picture > img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://cdn.statically.io/img/images2.optimages.net/f=auto/firefox/58G6VA8f3oHuPITtzsunLg/m3504267/7024/146279/151808/creditosimprovisado.jpg')]", "xpath:img"],
+        ["xpath=//div[@id='reader-wrapper']/div[3]/div[2]/div/picture/img", "xpath:idRelative"],
+        ["xpath=//picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e4f57b0b-6386-4852-8c36-bda3c12757af",
+      "comment": "",
+      "command": "click",
+      "target": "css=.chapter-next:nth-child(3)",
+      "targets": [
+        ["css=.chapter-next:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='reader-wrapper']/div[2]/div[3]/div[3]", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]/div[3]/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0ed34a1e-f5aa-4aba-911f-dcb5fe6a2b91",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=picture > img",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "3913cdf6-0da2-4791-8ca6-86cd2a84933e",
+      "comment": "",
+      "command": "click",
+      "target": "css=picture > img",
+      "targets": [
+        ["css=picture > img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://cdn.statically.io/img/images2.optimages.net/f=auto/firefox/CEdNA5mjQ9qkXVH2xo7tfA/m3504268/7024/146280/151809/01.png')]", "xpath:img"],
+        ["xpath=//div[@id='reader-wrapper']/div[3]/div[2]/div/picture/img", "xpath:idRelative"],
+        ["xpath=//picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "70a3410f-b8ba-41f0-b4fe-6ccef2a76a54",
+      "comment": "",
+      "command": "click",
+      "target": "css=picture > img",
+      "targets": [
+        ["css=picture > img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://cdn.statically.io/img/images2.optimages.net/f=auto/firefox/UhIEM4qRt45RCseeHcnOqg/m3504269/7024/146280/151809/02.png')]", "xpath:img"],
+        ["xpath=//div[@id='reader-wrapper']/div[3]/div[2]/div/picture/img", "xpath:idRelative"],
+        ["xpath=//picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c8b5a0a-65e5-4b1e-ac39-fce6d52aed07",
+      "comment": "",
+      "command": "click",
+      "target": "css=picture > img",
+      "targets": [
+        ["css=picture > img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://cdn.statically.io/img/images2.optimages.net/f=auto/firefox/3aHSqBzgW88jYZYwTgxBng/m3504270/7024/146280/151809/03.png')]", "xpath:img"],
+        ["xpath=//div[@id='reader-wrapper']/div[3]/div[2]/div/picture/img", "xpath:idRelative"],
+        ["xpath=//picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9e4f3dfc-9462-42c9-8a8f-092ece362456",
+      "comment": "",
+      "command": "click",
+      "target": "css=.title:nth-child(1)",
+      "targets": [
+        ["css=.title:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='reader-wrapper']/div[2]/div[2]/div/div[2]/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'The King of Fighters: A New Beginning')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5882dab0-ed9e-4752-9dc9-dd63ac194e25",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Ver Página da Série",
+      "targets": [
+        ["linkText=Ver Página da Série", "linkText"],
+        ["css=.series-cover > a", "css:finder"],
+        ["xpath=//div[@id='reader-wrapper']/div[2]/div[2]/div[2]/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/manga/the-king-of-fighters-a-new-beginning/7024')]", "xpath:href"],
+        ["xpath=//div[2]/div[2]/div[2]/div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Ver Página da Série')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "84aa11b9-67a2-441f-beb8-95ae1902fc8f",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,900)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4a129376-74e4-48fe-b72d-3e61097f69ad",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=li:nth-child(50)",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "59063add-5498-45aa-bbb4-e077696e9fa0",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=li:nth-child(50) .lido-icon",
+      "targets": [
+        ["css=li:nth-child(50) .clear", "css:finder"],
+        ["xpath=//div[@id='chapter-list']/div[2]/ul[2]/li[50]/div/div[2]", "xpath:idRelative"],
+        ["xpath=//li[50]/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "752c5503-fcbe-461b-88e3-f47d94da009d",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=li:nth-child(49) .lido-icon",
+      "targets": [
+        ["css=li:nth-child(50) .clear", "css:finder"],
+        ["xpath=//div[@id='chapter-list']/div[2]/ul[2]/li[50]/div/div[2]", "xpath:idRelative"],
+        ["xpath=//li[50]/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a2989c01-9da4-4880-9069-25ff1b43232a",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=li:nth-child(48) .lido-icon",
+      "targets": [
+        ["css=li:nth-child(50) .clear", "css:finder"],
+        ["xpath=//div[@id='chapter-list']/div[2]/ul[2]/li[50]/div/div[2]", "xpath:idRelative"],
+        ["xpath=//li[50]/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "112c8e4e-09b7-42a6-9f64-42b473a775d5",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=li:nth-child(47).views-icon, .blue",
+      "targets": [
+        ["css=li:nth-child(50) .clear", "css:finder"],
+        ["xpath=//div[@id='chapter-list']/div[2]/ul[2]/li[50]/div/div[2]", "xpath:idRelative"],
+        ["xpath=//li[50]/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4c53bd3c-8685-4686-9df1-7dafa75e4341",
+      "comment": "",
+      "command": "forEach",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "baef7ede-15ce-4fe0-b944-27d4446f470c",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://mangalivre.net/"],
+  "plugins": []
+}
