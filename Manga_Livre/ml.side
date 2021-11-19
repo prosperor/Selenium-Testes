@@ -90,19 +90,6 @@
         ["xpath=//div[3]/span", "xpath:position"]
       ],
       "value": ""
-    }, {
-      "id": "2bb22ed5-c2b9-4194-83af-fd002c67b733",
-      "comment": "Abrir menu de perfil",
-      "command": "click",
-      "target": "id=trigger-menu",
-      "targets": [
-        ["id=trigger-menu", "id"],
-        ["css=#trigger-menu", "css:finder"],
-        ["xpath=//span[@id='trigger-menu']", "xpath:attributes"],
-        ["xpath=//div[@id='topnav']/div[2]/div[3]/div[3]/span", "xpath:idRelative"],
-        ["xpath=//div[3]/span", "xpath:position"]
-      ],
-      "value": ""
     }]
   }, {
     "id": "bb754d1c-c3f6-45f5-8252-c08855520b64",
@@ -1022,13 +1009,6 @@
         ["xpath=//div[@id='chapter-list']/div[2]/ul[2]/li[50]/div/div[2]", "xpath:idRelative"],
         ["xpath=//li[50]/div/div[2]", "xpath:position"]
       ],
-      "value": ""
-    }, {
-      "id": "4c53bd3c-8685-4686-9df1-7dafa75e4341",
-      "comment": "",
-      "command": "forEach",
-      "target": "",
-      "targets": [],
       "value": ""
     }]
   }],
