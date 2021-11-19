@@ -1,8 +1,5 @@
 from CriarEnquete import CriarEnquete
 from Enquete import Enquete
-
-def enqueteFeita(cabecalho,cabecalho_2):
-    return (cabecalho == cabecalho_2)
     
 pergunta, opcoes = ["Qual plataforma você prefere?",["DOOM Eternal (id software/Bethesda)", "Final Fantasy VII Remake (Square Enix)", "Ghost of Tsushima (Sucker Punch/SIE)", "Hades (Supergiant Games)", "The Last of Us Part II (Naughty Dog/SIE)"]]
     
